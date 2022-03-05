@@ -1,0 +1,3 @@
+[submodule "data-raw/medsl/2020-elections-official"]
+	path = data-raw/medsl/2020-elections-official
+	url = https://github.com/MEDSL/2020-elections-official
