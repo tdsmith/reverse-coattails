@@ -1,7 +1,7 @@
 geopandas
 pandas
-notebook
 plotnine
 pyproj<3.3
 dvc
 pip-tools
+jupyterlab
