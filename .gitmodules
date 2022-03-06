@@ -1,3 +1,6 @@
 [submodule "data-raw/medsl/2020-elections-official"]
 	path = data-raw/medsl/2020-elections-official
 	url = https://github.com/MEDSL/2020-elections-official
+[submodule "data-raw/alarm-redist-census-2020"]
+	path = data-raw/alarm-redist-census-2020
+	url = https://github.com/alarm-redist/census-2020
