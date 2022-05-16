@@ -1,0 +1,5 @@
+stages:
+  fetch_pa:
+    cmd: curl -O https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/42_PENNSYLVANIA/ALL_ZIPPED/tl_2020_42_all.zip
+    outs:
+    - tl_2020_42_all.zip
