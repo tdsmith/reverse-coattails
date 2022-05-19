@@ -1,5 +1,10 @@
 stages:
   fetch_pa:
-    cmd: curl -O https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/42_PENNSYLVANIA/ALL_ZIPPED/tl_2020_42_all.zip
+    cmd: curl -O ftp://ftp.census.gov/geo/tiger/TIGER2020PL/STATE/42_PENNSYLVANIA/ALL_ZIPPED/tl_2020_42_all.zip
     outs:
     - tl_2020_42_all.zip
+  fetch_nc:
+    cmd: curl -O ftp://ftp.census.gov/geo/tiger/TIGER2020PL/STATE/37_NORTH_CAROLINA/ALL_ZIPPED/tl_2020_37_all.zip
+    outs:
+    - tl_2020_37_all.zip
+
