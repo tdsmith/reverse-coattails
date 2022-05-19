@@ -20,21 +20,26 @@ A voting district is guaranteed to be smaller than a county but may have an unkn
 1.02   Precinct Geocode ID
 1.03   County name
 
+1.01-1.03: the Census TIGER/Line shapefiles provide definitions of the VTDs and their names, and relate them to counties and census blocks
 
 1.04   Municipality name
 1.05   Municipality type (town, village, etc.)
 1.06   Ward (sub-municipal level for cities)
 
-Redistricting Data Hub appears to be a fairly comprehensive source of post-2020 district shapefiles.
+- 1.04-1.06: TIGER/Line also has shapefiles for municipalities and wards; we can infer municipality and ward details by observing whether the VTDs intersect a shapefile. There is apparently not a formal promise that a VTD is fully contained by any political subdivision of a state other than a county, though you'd think that would facilitate election administration, so I'm guessing this is a trivial assignment in most cases.
+
 
 1.07   new 2022 state house district number
 1.08   new 2022 state senate district number
 1.09   new 2022 US House district number
 
+- 1.07-1.09: Redistricting Hub seems to aggregate and republish shapefiles for new legislative districts for Congress and state legislatures, so I think we can intersect the VTDs from TIGER/Line with the new shapefiles to determine how the new VTDs are assigned to districts. Note that 2010 VTDs may have partial overlap with the new districts.
 
 1.10   previous (2020)state house district number
 1.11   previous (2020)state senate district number
 1.12   previous (2020) US House district number
+
+- 1.10-1.12: TIGER/Line contains legislative districts current to 2018.
 
 2.   Precinct election results
 from DRA precinct data (~2016-2020)
@@ -42,6 +47,8 @@ from DRA precinct data (~2016-2020)
 2.2   Governor
 2.3   US Senator
 2.4   Attorney General
+
+2.1-2.4: VEST has this data aligned to 2010 VTDs. The ALARM project has done this for statewide races using a disaggregation/reaggregation method: https://alarm-redist.github.io/posts/2021-08-10-census-2020/ -- so we can take that data directly
 
 from MEDSL *
 
@@ -51,7 +58,7 @@ from MEDSL *
 
 2.7   State House
 
- 
+ 2.5-2.7: I see that MEDSL has great data on substate races. If we need these aligned to the 2020 VTDs I think we can apply a "crosswalking" method similar to what the ALARM project did with VEST data to project those results onto 2020 VTDs, and it might be possible that someone's already done this. This would probably be the most difficult part of the project.
 
 3.   Precinct-level demographic data:
 
