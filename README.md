@@ -26,7 +26,8 @@ A voting district is guaranteed to be smaller than a county but may have an unkn
 1.05   Municipality type (town, village, etc.)
 1.06   Ward (sub-municipal level for cities)
 
-- 1.04-1.06: TIGER/Line also has shapefiles for municipalities and wards; we can infer municipality and ward details by observing whether the VTDs intersect a shapefile. There is apparently not a formal promise that a VTD is fully contained by any political subdivision of a state other than a county, though you'd think that would facilitate election administration, so I'm guessing this is a trivial assignment in most cases.
+- 1.04-1.06: TIGER/Line also has shapefiles for county subdivisions; we can infer municipality and ward details by observing whether the VTDs intersect a shapefile. There is apparently not a formal promise that a VTD is fully contained by any political subdivision of a state other than a county, though you'd think that would facilitate election administration, so I'm guessing this is a trivial assignment in most cases.
+TIGER/Line does *not* generally have shapefiles for all urban wards, at least in Pennsylvania, though some VTDs are named in terms of wards.
 
 
 1.07   new 2022 state house district number
