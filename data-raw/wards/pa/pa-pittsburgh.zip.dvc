@@ -1,0 +1,11 @@
+# https://data.wprdc.org/dataset/wards
+md5: 12ed780b7aca4ee0a312dde04cca1989
+frozen: true
+deps:
+- checksum: '"1652875311.18-72617"'
+  size: 72617
+  path: https://data.wprdc.org/dataset/766bbec2-e744-408e-9c8c-a58b662b6007/resource/cb7eb6a2-c0bd-439e-abf4-1657ec4b6a96/download/pittsburghpawards.zip
+outs:
+- md5: 7112669f6209e8a80ddb7ee4b1fc688c
+  size: 72617
+  path: pa-pittsburgh.zip
