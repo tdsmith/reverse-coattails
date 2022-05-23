@@ -1,4 +1,4 @@
-dvc
+dvc[s3]
 geopandas
 jupyterlab
 pandas

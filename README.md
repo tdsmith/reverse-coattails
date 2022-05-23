@@ -1,7 +1,8 @@
 ## Environment setup (M1 Mac)
 
 1. `git clone --recurse-submodules https://github.com/tdsmith/reverse-coattails` (or `git submodule update --init` after cloning)
-1. `brew install gdal proj@7`
+1. `brew install gdal proj@7 direnv`
+1. `direnv allow`
 1. `PROJ_DIR=(brew --prefix proj@7) pip install -r requirements.txt`
 1. `dvc pull`
 
