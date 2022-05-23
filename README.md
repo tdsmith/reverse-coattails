@@ -77,3 +77,9 @@ total population by census groups (e.g. Asian) and group percentages
 3.5   2010 VAP
 
 3.6   2010 Citizen VAP
+
+## Licenses
+
+Executable code (*.py, *.ipynb) is made available under the terms of the [Apache 2.0 license](APACHE-2.0).
+
+Processed data is made available under the terms of the [CC-SA 4.0 license](LICENSE).
