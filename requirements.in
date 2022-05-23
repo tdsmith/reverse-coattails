@@ -1,8 +1,8 @@
+dvc
 geopandas
+jupyterlab
 pandas
+pip-tools
 plotnine
 pyproj<3.3
-dvc
-pip-tools
 rtree
-jupyterlab
