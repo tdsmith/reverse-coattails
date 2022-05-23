@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  pa_cong_adopted_2022_zip:
+    cmd: curl -o pa_cong_adopted_2022.zip --location --get --data username=$REDISTRICTING_DATA_HUB_USERNAME
+      --data password=$REDISTRICTING_DATA_HUB_PASSWORD https://redistrictingdatahub.org/wp-json/download/file/web_ready_stage%2Flegislative%2F2021_adopted_plans%2Fpa_cong_adopted_2022.zip
+    outs:
+    - path: pa_cong_adopted_2022.zip
+      md5: 360edf19c36063a509a923924ae2c1b6
+      size: 4969192
+  pa_sldu_adopted_2022_zip:
+    cmd: curl -o pa_sldu_adopted_2022.zip --location --get --data username=$REDISTRICTING_DATA_HUB_USERNAME
+      --data password=$REDISTRICTING_DATA_HUB_PASSWORD https://redistrictingdatahub.org/wp-json/download/file/web_ready_stage%2Flegislative%2F2021_adopted_plans%2Fpa_sldu_adopted_2022.zip
+    outs:
+    - path: pa_sldu_adopted_2022.zip
+      md5: 047d65f3c36fa1d2b601a72772b2bf78
+      size: 3151091
+  pa_sldl_adopted_2022_zip:
+    cmd: curl -o pa_sldl_adopted_2022.zip --location --get --data username=$REDISTRICTING_DATA_HUB_USERNAME
+      --data password=$REDISTRICTING_DATA_HUB_PASSWORD https://redistrictingdatahub.org/wp-json/download/file/web_ready_stage%2Flegislative%2F2021_adopted_plans%2Fpa_sldl_adopted_2022.zip
+    outs:
+    - path: pa_sldl_adopted_2022.zip
+      md5: 7b02379204d8a71d5df261c9c3bdecc1
+      size: 5155199
