@@ -1,5 +1,8 @@
+schema: '2.0'
 stages:
   fetch_pa:
     cmd: curl -O ftp://ftp.census.gov/geo/tiger/TIGER2020PL/STATE/42_PENNSYLVANIA/ALL_ZIPPED/tl_2020_42_all.zip
     outs:
-    - tl_2020_42_all.zip
+    - path: tl_2020_42_all.zip
+      md5: 3c8285abf0fee0c637f6399bb6668029
+      size: 2234662204
