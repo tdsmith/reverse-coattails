@@ -9,7 +9,7 @@ import pandas as pd
 class OverlayResult:
     within: pd.Series
     contained: pd.Series
-    intersected: dict[str, pd.DataFrame]
+    intersected: dict[str, pd.Series]
     no_match: pd.Index
 
     overlaid: gpd.GeoDataFrame
