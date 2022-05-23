@@ -4,3 +4,6 @@
 [submodule "data-raw/alarm-redist-census-2020"]
 	path = data-raw/alarm-redist-census-2020
 	url = https://github.com/alarm-redist/census-2020
+[submodule "data-raw/dra2020"]
+	path = data-raw/dra2020
+	url = https://github.com/dra2020/vtd_data
