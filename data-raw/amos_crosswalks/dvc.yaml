@@ -1,0 +1,5 @@
+stages:
+  fetch:
+    cmd: curl -Lo block10block20_crosswalks.zip https://dataverse.harvard.edu/api/access/datafile/4513650?format=original&gbrecs=true
+    outs:
+    - block10block20_crosswalks.zip

@@ -1,0 +1,8 @@
+schema: '2.0'
+stages:
+  fetch:
+    cmd: curl -Lo block10block20_crosswalks.zip https://dataverse.harvard.edu/api/access/datafile/4513650?format=original&gbrecs=true
+    outs:
+    - path: block10block20_crosswalks.zip
+      md5: c8c099056fe0c348ce0e0a60463aae2b
+      size: 63895983
